@@ -1,0 +1,19 @@
+.head{
+    /* position: fixed; */
+    width: 100vw;
+    height: 50vh;
+    background-color: #090c2b;
+}
+.content{
+    width: 100vw;
+    height: 50vh;
+    background-color: #818181;
+}
+.tab{
+    background-color: gold;
+}
+.footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: darkblue;
+}

@@ -1,1 +1,1 @@
-# aiclubvitbhopal.github.io
+# aiclub
