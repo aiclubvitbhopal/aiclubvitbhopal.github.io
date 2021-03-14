@@ -43,10 +43,11 @@ body::-webkit-scrollbar {
 .topnav {
     position: fixed;
     overflow: visible;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.6);
     top: -12vh;
-    transition: top 0.3s;
+    transition: top 0.2s;
     z-index: 10;
+    height: 12vh;
     /* vertical-align: middle; */
     /* z-index: ; */
 }
@@ -112,6 +113,7 @@ body::-webkit-scrollbar {
     .topnav {
         position: fixed;
         background-color: rgba(0, 0, 0, 0.6);
+        height: 10vh;
     }
     .topnav a{
         height: 9vh;
