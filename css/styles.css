@@ -32,6 +32,8 @@ body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    width: 100vw;
+    overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -109,6 +111,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 900px) {
     .topnav {
         position: fixed;
+        background-color: rgba(0, 0, 0, 0.6);
     }
     .topnav a{
         height: 9vh;
@@ -117,21 +120,24 @@ body::-webkit-scrollbar {
     .topnav a.icon {
       float: right;
       display: block;
-      margin-left: 37vw;
+      width: 12vw;
+      /* margin-left: 37vw; */
       padding-right: 5vw;
       padding-top: 2.3vh;
     }
     .topnav a.img{
         display: block;
         padding-top: 1vh;
+        width: 88vw;
+        text-align: left
         /* padding-top: 200px; */
     }
 }
   
 @media screen and (max-width: 900px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position: fixed;}
     .topnav.responsive .icon {
-      position: absolute;
+      position: fixed;
       right: 0;
       top: 0;
       /* padding-right: 5vw; */
