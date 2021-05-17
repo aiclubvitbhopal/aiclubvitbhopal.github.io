@@ -178,7 +178,7 @@ body {
         font-size: 0;
         /* line-height: 1.5; */
         text-align: center;
-        color: rgb(42,10,77);
+        color: rgb(07,47,96);
         font-weight: 800;
         /* font-size: 6em; */
         /* font-family: android; */
@@ -186,6 +186,7 @@ body {
       
       .words span {
         font-size: 3.2rem;
+        font-weight: 800;
         display: inline-block;
         animation: move 3s ease-in-out infinite;
       }
