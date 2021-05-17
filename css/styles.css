@@ -169,10 +169,88 @@ body::-webkit-scrollbar {
         padding-left: 30px;
     }      
 }
+/*---------------------------------------
+   Footer section              
+-----------------------------------------*/
 
-.footer {
-    /* position: fixed; */
-    /* margin-left: -5vw; */
+footer {
+    background: #000000;
+    color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer p{
+    color: #707070;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.4px;
+    text-decoration: none !important;
+    outline: none;
+    font-family: 'Lora', sans-serif
+}
+
+footer .col-md-5 {
+    position: relative;
+    left: 100px;
+}
+
+footer .col-md-5 div {
+    padding-top: 10px;
+}
+
+footer h4 {
+    margin-top: 0px;
+    color: #999;
+    letter-spacing: 2px;
+    margin-top: 22px;
+    font-family: 'Lora', sans-serif
+}
+
+footer .copyright-text {
+    padding-top: 30px;
+    text-align: center;
+    color: #707070;
+    transition: all 0.4s ease-in-out;
+}
+
+.copyright-text a:hover {
+    color: #ffffff;
+}
+
+
+/*---------------------------------------
+   Social icon             
+-----------------------------------------*/
+
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    color: #999;
+    border-radius: 100px;
+    font-size: 70px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.social-icon li a:hover {
+    background: #ffffff;
+}
+/* .footer {
     bottom: 0;
     width: 100vw;
     height: auto;
@@ -188,17 +266,15 @@ body::-webkit-scrollbar {
 
 .fr{
     text-align: center !important;
-    /* width: 50vh; */
     padding-top: 4vh;
     padding-bottom: 2vh;
 }
 
 .fr a:active{
     text-align: center !important;
-    /* width: 50vh; */
     padding-bottom: 1vh;
     color: red;
-}
+} */
 
 .mouse {
     font-size:30px;color:white;
@@ -206,13 +282,21 @@ body::-webkit-scrollbar {
 .mouse:hover{
     margin-top: -10em;
     transition: 0.5s;
-    color: black;
+    color: rgb(83, 83, 83);
 }
 .mouse-wrap{
     margin-top: -18vh;
     text-align: center;
 }
 @media screen and (max-width: 900px) {
+    footer {
+        text-align: center;
+    }
+    footer .col-md-5 {
+        left: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .mouse-wrap{
         margin-top: -5vh;
         text-align: center;

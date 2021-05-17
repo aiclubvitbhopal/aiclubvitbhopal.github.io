@@ -14,7 +14,7 @@ body {
     /* top: -10vh; */
     margin: 0;
     padding: 0;
-    /* background-color: #090c2b; */
+    /* background-color: #f4d03f; */
     background-image: linear-gradient(to right, rgb(42,10,77),rgb(07,47,96));
     z-index: -10;
 
@@ -23,8 +23,8 @@ body {
     width: 80%;
     padding: 10em;
     padding-top: 10em;
-    padding-left: 3vw;
-    padding-right: 5vw;
+    padding-left: 10vw;
+    padding-right: 2vw;
 }
 
 .home-txt{
@@ -32,15 +32,125 @@ body {
     padding-left: 5vw;
     padding-right: 0;
 }
-.home-txt h1{
-    /* margin: 0 auto; */
+.words {
+    color: #f4d03f;
+    font-size: 0;
+    /* line-height: 1.5; */
     text-align: center;
-    /* vertical-align: middle; */
-    /* justify-content: center; */
+    color: rgb(42,10,77);
+    font-weight: 800;
+    /* font-size: 6em; */
+    /* font-family: android; */
+  }
+  
+  .words span {
+    font-size: 7rem;
+    display: inline-block;
+    animation: move 3s ease-in-out infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(-30%, 0);
+    }
+    50% {
+      text-shadow: 0 25px 50px rgba(255, 255, 255, 0.75);
+    }
+    100% {
+      transform: translate(30%, 0);
+    }
+  }
+  
+  .words span:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .words span:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  .words span:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+  
+  .words span:nth-child(5) {
+    animation-delay: 2s;
+  }
+  
+  .words span:nth-child(6) {
+    animation-delay: 2.5s;
+  }
+  
+  .words span:nth-child(7) {
+    animation-delay: 3s;
+  }
+
+  .words span:nth-child(8) {
+    animation-delay: 3.5s;
+  }
+  
+  .words span:nth-child(9) {
+    animation-delay: 4s;
+  }
+  
+  .words span:nth-child(10) {
+    animation-delay: 4.5s;
+  }
+  
+.home-txt h1{
+    text-align: center;
     color: white;
     font-weight: 800;
     font-size: 6em;
     font-family: android;
+}
+.home-txt h2{
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 3em;
+    font-family: android;
+    /* animation: animated-text 2s steps(30,end) 1s 1 normal both; */
+}
+#parent {
+  /* height: 40px; */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden; 
+  font-family: android;  
+  font-size: 3em;
+  color: rgba(255,255,255,.70);
+  position: relative;
+}
+
+#border {
+  border-bottom: solid 3px rgba(0,255,0,.75);
+  position: absolute;
+  right: -7px;
+  width: 20px;
+}
+
+/* Animation */
+#parent {
+  animation: animated-text 2s steps(30,end) 1s 1 normal both;
+}
+
+#border {
+   animation: animated-cursor 600ms steps(30,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 705px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-bottom-color: rgba(0,255,0,.75);}
+  to{border-bottom-color: transparent;}
 }
 @media screen and (max-width: 900px) {
     .head{
@@ -63,6 +173,23 @@ body {
         padding-left: 8vw;
         padding-right: 8vw;
     }
+    .words {
+        color: #f4d03f;
+        font-size: 0;
+        /* line-height: 1.5; */
+        text-align: center;
+        color: rgb(42,10,77);
+        font-weight: 800;
+        /* font-size: 6em; */
+        /* font-family: android; */
+      }
+      
+      .words span {
+        font-size: 3.2rem;
+        display: inline-block;
+        animation: move 3s ease-in-out infinite;
+      }
+      
     .home-txt{
         padding-top: 14vh;
         padding-left: 5vw;
@@ -77,6 +204,14 @@ body {
         font-weight: 800;
         font-size: 3em;
     }
+    #parent { 
+        padding-top: 5vh;
+        font-size: 1.3em;
+      }
+      @keyframes animated-text{
+        from{width: 0;}
+        to{width:90.7%;}
+      }
 }
 .content{
     width: 100vw;
