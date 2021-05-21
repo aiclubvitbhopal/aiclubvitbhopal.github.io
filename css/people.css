@@ -14,7 +14,7 @@ body {
 
 .side-navbar {
   height: 100%;
-  width: 11vmin;
+  width: 5vmin;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -24,11 +24,15 @@ body {
   overflow-y: scroll;
   text-transform: uppercase;
 }
+.side-navbar::-webkit-scrollbar {
+  display: none;
+}
 .side-navbar div {
   color: white;
   transform: rotate(-90deg);
   font-family: var(--Nunito);
-  margin-top: 90px;
+  margin-top: 130px;
+  width: 5vh;
 }
 
 .side-navbar a {
@@ -37,7 +41,6 @@ body {
   margin-top: 0px;
   font-family: var(--Nunito);
   letter-spacing: 2px;
-  margin-top: 0;
   text-decoration: none;
 }
 
@@ -232,9 +235,10 @@ header nav ul a {
 
 .section-4 .cards .card .card-img-heads{
   padding: 5% 5% 0 5%;
-  width: 100%;
+  width: 40vh;
   height: 40vh;	
-  border-radius: 13%;
+  /* border-radius: ; */
+  overflow: hidden;
 }
 
 .section-4 .container-fluid .row .cards .card-1 {
@@ -280,6 +284,8 @@ header nav ul a {
   opacity: 0;
   padding: 2rem 1.3rem 2rem 2rem;
   transition: all 0.4s ease 0s;
+  text-align: center;
+  font-size: 4em;
 }
 
 /* On hovering card opacity of content must be 1*/
