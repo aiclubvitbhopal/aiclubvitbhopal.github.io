@@ -12,6 +12,35 @@ body {
   background-color: #1f2833;
 }
 
+.side-navbar {
+  height: 100%;
+  width: 11vmin;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-transform: uppercase;
+}
+.side-navbar div {
+  color: white;
+  transform: rotate(-90deg);
+  font-family: var(--Nunito);
+  margin-top: 90px;
+}
+
+.side-navbar a {
+  color: white;
+  transform: rotate(-90deg);
+  margin-top: 0px;
+  font-family: var(--Nunito);
+  letter-spacing: 2px;
+  margin-top: 0;
+  text-decoration: none;
+}
+
 header {
   overflow-x: hidden;
   background-color: #1f2833;
