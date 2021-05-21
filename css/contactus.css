@@ -65,16 +65,7 @@ body::-webkit-scrollbar {
     /* vertical-align: middle; */
     /* overflow: hidden; */
 }
-/* center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-/* .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-} */
+
 
 .topnav a.active {
     margin-top: 3vh;
@@ -170,34 +161,127 @@ body::-webkit-scrollbar {
     }      
 }
 
-.footer {
-    /* position: fixed; */
-    /* margin-left: -5vw; */
-    bottom: 0;
-    width: 100vw;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
+/*---------------------------------------
+   Contact section              
+-----------------------------------------*/
+
+.contact{
+    background-color: inherit;
 }
-.footer h1{
-    text-align: center;
-    font-size: 5em;
-    font-weight: 900;
+form{
+    width: 50%;
+    margin: auto;
 }
 
-.fr{
-    text-align: center !important;
-    /* width: 50vh; */
-    padding-top: 4vh;
-    padding-bottom: 2vh;
+form label{
+    font-size: 1rem;
+}
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 3px;
+    border: none;
+    outline-color: #2f67cd;
+}
+input[type="submit"]{
+    width: initial;
+    background-color: rgba(148, 253, 87, 0.733);
+    color: black;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+input[type="submit"]:hover{
+    color:#221e3f;
+    background-color: grey;
+}
+/*END CONTACT*/
+
+
+/*---------------------------------------
+   Footer section              
+-----------------------------------------*/
+
+footer {
+    background: #000000;
+    color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-.fr a:active{
-    text-align: center !important;
-    /* width: 50vh; */
-    padding-bottom: 1vh;
-    color: red;
+footer p{
+    color: #707070;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.4px;
+    text-decoration: none !important;
+    outline: none;
+    font-family: 'Lora', sans-serif
+}
+
+footer .col-md-5 {
+    position: relative;
+    left: 100px;
+}
+
+footer .col-md-5 div {
+    padding-top: 10px;
+}
+
+footer h4 {
+    margin-top: 0px;
+    color: #999;
+    letter-spacing: 2px;
+    margin-top: 22px;
+    font-family: 'Lora', sans-serif
+}
+
+footer .copyright-text {
+    padding-top: 30px;
+    text-align: center;
+    color: #707070;
+    transition: all 0.4s ease-in-out;
+}
+
+.copyright-text a:hover {
+    color: #ffffff;
+}
+
+
+/*---------------------------------------
+   Social icon             
+-----------------------------------------*/
+
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    color: #999;
+    border-radius: 100px;
+    font-size: 70px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.social-icon li a:hover {
+    background: #ffffff;
 }
 
 .mouse {
@@ -206,13 +290,21 @@ body::-webkit-scrollbar {
 .mouse:hover{
     margin-top: -10em;
     transition: 0.5s;
-    color: black;
+    color: rgb(83, 83, 83);
 }
 .mouse-wrap{
     margin-top: -18vh;
     text-align: center;
 }
 @media screen and (max-width: 900px) {
+    footer {
+        text-align: center;
+    }
+    footer .col-md-5 {
+        left: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .mouse-wrap{
         margin-top: -5vh;
         text-align: center;
