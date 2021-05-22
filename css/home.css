@@ -178,7 +178,7 @@ body {
         font-size: 0;
         /* line-height: 1.5; */
         text-align: center;
-        color: rgb(42,10,77);
+        color: rgb(07,47,96);
         font-weight: 800;
         /* font-size: 6em; */
         /* font-family: android; */
@@ -186,6 +186,7 @@ body {
       
       .words span {
         font-size: 3.2rem;
+        font-weight: 800;
         display: inline-block;
         animation: move 3s ease-in-out infinite;
       }
@@ -376,7 +377,7 @@ body {
         margin-left: 5vw;
         /* background-color: blue; */
         z-index: -10;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .people h1{
         text-align: center;
@@ -388,8 +389,112 @@ body {
         font-family: android;
     }
 }
+.flip-card {
+  /* margin-left: 12vw; */
+  background-color: transparent;
+  width: 20vw;
+  height: 20vw;
+  /* border: 1px solid #f1f1f1; */
+  /* perspective: 1000px;  */
+}
 
-.card {
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #bbb; */
+  color: black;
+  overflow: hidden;
+}
+.flip-card-front img{
+  width: 100%;
+}
+
+/* Style the back side */
+.flip-card-back {
+  padding-top: 5vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back h5{
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+  font-weight: 700;
+}
+.flip-card-back p{
+  padding-top: 5vh;
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.flip-card-back p1{
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  font-weight: 500;
+  /* padding-bottom: 4vh; */
+}
+.flip-card-back h6{
+  padding-top: 5vh;
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  font-weight: 500;
+}
+@media screen and (max-width: 900px) {
+  .flip-card-back {
+    padding-top: 1vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-card-back h5{
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-weight: 700;
+  }
+  .flip-card-back p{
+    padding-top: 1vw;
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    font-weight: 700;
+  }
+  .flip-card-back p1{
+    color: rgb(0, 0, 0);
+    font-size: 0.6em;
+    font-weight: 500;
+    /* padding-bottom: 4vh; */
+  }
+  .flip-card-back h6{
+    padding-top: 0vw;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+}
+
+/* .card {
     box-shadow: 0 10px 20px 0 rgba(255, 255, 255, 0.301);
     max-width: 20vw;
     margin: auto;
@@ -408,7 +513,7 @@ body {
     font-weight: 600;
     padding-left: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
   
 .title {
     color: grey;
@@ -420,7 +525,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
     grid-template-rows: auto;
-    grid-gap: 0 5%;
+    grid-gap: 5% 5%;
 }
 .heads {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.301);
@@ -456,7 +561,23 @@ body {
 {
   width: 100%;
 }
+.gridh{
+  padding-left: 15vw;
+  padding-right: 15vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 5% 20%;
+}
 @media screen and (max-width: 900px) {
+  .flip-card {
+    /* margin-left: 12vw; */
+    background-color: transparent;
+    width: 40vw;
+    height: 40vw;
+    /* border: 1px solid #f1f1f1; */
+    /* perspective: 1000px;  */
+  }
     .card {
         /* box-shadow: 0 10px 20px 0 rgba(255, 255, 255, 0.301); */
         max-width: 80vw;
@@ -488,7 +609,15 @@ body {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
         grid-template-rows: auto;
-        grid-gap: 0 5%;
+        grid-gap: 5% 5%;
+    }
+    .gridh{
+      padding-left: 5vw;
+      padding-right: 5vw;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+      grid-template-rows: auto;
+      grid-gap: 5% 5%;
     }
     .heads {
         box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.301);
@@ -531,4 +660,155 @@ body {
     {
     width: 100%;
     }
+}
+/*---------------------------------------
+    Testimonial section              
+-----------------------------------------*/
+
+/* #testimonial {
+  background: #ffffff;
+  color: #26253a;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+#testimonial .fa {
+  font-size: 42px;
+  padding-bottom: 14px;
+}
+
+#testimonial h3 {
+  letter-spacing: 1px;
+} */
+.testimonial h1{
+  font-size: 4em;
+  font-weight: 800;
+  /* float: right; */
+  padding-top: 10vh;
+  padding-bottom: 8vh;
+  padding-left: 10vw;
+  font-family: android;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: transparent;
+  /* margin-left: 10vh;
+  margin-right: 10vh; */
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  font-size: 1.6em;
+}
+.mySlides i{
+  font-size: 3em;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 3em;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.prev{
+  left: 15vh;
+}
+.next {
+  position: absolute;
+  right: 15vh;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  /* background-color: rgba(0,0,0,0.8); */
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: transparent;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+@media screen and (max-width: 900px) {
+  .testimonial h1{
+    font-size: 2.5em;
+    font-weight: 800;
+    /* float: right; */
+    padding-top: 10vh;
+    padding-bottom: 8vh;
+    padding-left: 10vw;
+    font-family: android;
+  }
+  /* Slideshow container */
+  .slideshow-container {
+    position: relative;
+    background: transparent;
+    /* margin-left: 10vh;
+    margin-right: 10vh; */
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-size: 1.2em;
+  }
+  .mySlides i{
+    font-size: 3em;
+  }
+  .prev{
+    left: 2vh;
+  }
+  .next {
+    position: absolute;
+    right: 2vh;
+    border-radius: 3px 0 0 3px;
+  }
 }
