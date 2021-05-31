@@ -562,12 +562,19 @@ body {
   width: 100%;
 }
 .gridh{
-  padding-left: 15vw;
-  padding-right: 15vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  /* text-align: center; */
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(60%, 1fr));
   grid-template-rows: auto;
-  grid-gap: 5% 20%;
+  grid-gap: 5% 5%;
+  color: black;
+  text-align: center;
+}
+.gridh h2, h3{
+  padding-bottom: 5vh;
+  font-weight: 700;
 }
 @media screen and (max-width: 900px) {
   .flip-card {
@@ -615,9 +622,13 @@ body {
       padding-left: 5vw;
       padding-right: 5vw;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(90%, 1fr));
       grid-template-rows: auto;
       grid-gap: 5% 5%;
+    }
+    .gridh h2, h3{
+      padding-bottom: 0vh;
+      font-weight: 500;
     }
     .heads {
         box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.301);
