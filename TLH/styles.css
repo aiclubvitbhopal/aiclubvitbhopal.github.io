@@ -337,7 +337,7 @@ body{
     
 @media only screen and (max-width: 470px){
     #logo{
-        width: 70px;
+        width: 250px;
     }
  #brand_1, #brand_2, #brand_3{
      font-size: 30px;
@@ -345,6 +345,17 @@ body{
  #registration{
      margin-left: 1px;
  }
+ .content >h4{
+     font-size: 30px;
+     
+ }
+ .content >h1{
+     font-size: 60px;
+ }
+ #footer_last{
+     font-size: 15px;
+ }
+
   
 } 
 
