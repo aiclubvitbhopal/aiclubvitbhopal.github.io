@@ -523,9 +523,9 @@ body {
     padding-left: 5vw;
     padding-right: 5vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
     grid-template-rows: auto;
-    grid-gap: 5% 5%;
+    grid-gap: 4% 4%;
 }
 .heads {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.301);
