@@ -292,6 +292,80 @@ body {
     /* z-index: -8; */
 }
 
+#club-apply {
+    position: relative;
+    width: 45vw;
+    height: 75px;
+    color: white;
+    background-color: rgb(143, 33, 125);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4);
+    padding: 1rem;
+}
+
+#AI-conclave-name {
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+#AI-conclave-year {
+    margin-top: 0.5rem;
+    padding-left: 20px;
+}
+
+#register-button {
+    position: relative;
+    float: right;
+    top: -15px;
+    background-color: rgb(255, 196, 0);
+    text-shadow: none;
+    margin-right: 0.5rem;
+    width: 15%;
+    font-size: 1rem;
+    height: 25px;
+    padding: 0.5rem;
+    border-radius: 10% 25% 50% 30%;
+    transform: rotate(-20deg);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#yellow-circle {
+    position: absolute;
+    top: -5px;
+    left: 45vw;
+    width: 50px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 0);
+    height: 50px;
+    border-radius: 50%;
+}
+
+#Live-Now {
+    position: relative;
+    margin-top: 6px;
+    border-radius: 0% 50% 50% 0%;
+    background-color: rgb(255, 255, 0, 0.8);
+    box-shadow: 1px 1px 2px 2px black;
+    padding: 3px;
+    width: 75px;
+    color: black;
+    left: -15px;
+}
+
+#skewed {
+    position: relative;
+    height: 140%;
+    top: -130%;
+    width: 30px;
+    transform: skew(30deg);
+    background-color: rgb(143, 33, 125, 0.4);
+    left: 50%;
+    box-shadow: 1px 1px 2px 2px rgb(255, 255, 255, 0.4);
+}
+
 .vision {
     display: block;
     /* visibility: hidden;
