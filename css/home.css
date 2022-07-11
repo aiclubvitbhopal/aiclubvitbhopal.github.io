@@ -321,6 +321,48 @@ body {
     /* bottom: 0; */
 }
 
+.outer {
+    /* display:flex; */
+    /* position: absolute; */
+    width: 60%;
+    padding: 0 100px;
+    shape-outside: circle(50%);
+    background-color: green;
+  }
+
+/* From https://css.glass */
+.circle{
+    
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    color: red;
+    position:static;
+}
+
+.eventbg{
+    /* position: absolute; */
+    background: #351b47;
+    /* margin: 50px 15% 0 55%; */
+    margin-top: 50px;
+    /* float: left; */
+    padding: 80px;
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.1px);
+    -webkit-backdrop-filter: blur(3.1px);
+}
+
+
+/* @media screen and (max-width: 500px) {
+    .outer {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+} */
+
+
 .people {
     display: block;
     /* visibility: hidden;
